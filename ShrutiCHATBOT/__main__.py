@@ -10,8 +10,8 @@ from pyrogram.types import BotCommand
 from config import OWNER_ID
 from ShrutiCHATBOT import LOGGER, ShrutiCHATBOT, userbot, load_clone_owners
 from ShrutiCHATBOT.modules import ALL_MODULES
-#from ShrutiCHATBOT.modules.Clone import restart_bots
-#from ShrutiCHATBOT.modules.Id_Clone import restart_idchatbots
+from ShrutiCHATBOT.modules.Clone import restart_bots
+from ShrutiCHATBOT.modules.Id_Clone import restart_idchatbots
 
 from colorama import Fore, Style, init
 init(autoreset=True)
