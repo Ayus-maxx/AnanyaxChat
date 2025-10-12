@@ -1,10 +1,10 @@
-# 🤖 Shruti ChatBot
+# 🤖 Ananya ChatBot
 
 <div align="center">
-  <img src="https://img.shields.io/github/stars/NoxxOP/ChatBot?style=for-the-badge&color=blue" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/NoxxOP/ChatBot?style=for-the-badge&color=green" alt="GitHub forks">
-  <img src="https://img.shields.io/github/license/NoxxOP/ChatBot?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/repo-size/NoxxOP/ChatBot?style=for-the-badge&color=orange" alt="Repo Size">
+  <img src="https://img.shields.io/github/stars/ZoxxOP/AnanyaxChat?style=for-the-badge&color=blue" alt="GitHub stars">
+  <img src="https://img.shields.io/github/forks/ZoxxOP/AnanyaxChat?style=for-the-badge&color=green" alt="GitHub forks">
+  <img src="https://img.shields.io/github/license/ZoxxOP/AnanyaxChat?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/repo-size/ZoxxOP/AnanyaxChat?style=for-the-badge&color=orange" alt="Repo Size">
 </div>
 
 <div align="center">
@@ -29,7 +29,7 @@
 ## 🚀 Quick Deploy
 
 ### Deploy to Heroku
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/ChatBot)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/ZoxxOP/AnanyaxChat)
 
 ### Deploy on Railway
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/NoxxOP/ChatBot)
@@ -62,8 +62,8 @@ LOG_GROUP_ID=your_log_group_id
 
 # Optional Configuration
 STRING_SESSION=your_string_session
-SUPPORT_CHAT=ShrutiBotSupport
-UPDATE_CHANNEL=ShrutiBots
+SUPPORT_CHAT=AnanyaBotSupport
+UPDATE_CHANNEL=AnanyaBots
 ```
 
 ### 🔑 How to Get Variables
@@ -82,7 +82,7 @@ UPDATE_CHANNEL=ShrutiBots
 
 ```bash
 # Clone the repository
-git clone https://github.com/NoxxOP/ChatBot.git
+git clone https://github.com/ZoxxOP/AnanyaxChat.git
 cd ChatBot
 
 # Install required packages
@@ -100,7 +100,7 @@ python main.py
 
 ```bash
 # Clone repository
-git clone https://github.com/NoxxOP/ChatBot.git
+git clone https://github.com/ZoxxOP/AnanyaxChat.git
 cd ChatBot
 
 # Build Docker image
@@ -122,7 +122,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git -y
 
 # Clone repository
-git clone https://github.com/NoxxOP/ChatBot.git
+git clone https://github.com/ZoxxOP/AnanyaxChat.git
 cd ChatBot
 
 # Install requirements
@@ -203,9 +203,9 @@ python3 main.py
 
 ## 🤝 Support & Community
 
-- 💬 **Community Channel**: [@ShrutiBots](https://t.me/ShrutiBots)
-- 🆘 **Support Group**: [@ShrutiBotSupport](https://t.me/ShrutiBotSupport)
-- 📧 **Developer Contact**: [@NoxxOP](https://t.me/NoxxOP)
+- 💬 **Community Channel**: [@AnanyaBots](https://t.me/AnanyaBots)
+- 🆘 **Support Group**: [@AnanuaBotSupport](https://t.me/AnanyaBotSupport)
+- 📧 **Developer Contact**: [@NoxxOP](https://t.me/ZoxxOP)
 
 ---
 
