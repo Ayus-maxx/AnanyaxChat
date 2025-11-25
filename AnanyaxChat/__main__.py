@@ -4,14 +4,14 @@ import importlib
 import logging
 import threading
 import config
-from ShrutiCHATBOT import ID_CHATBOT
+from AnanyaxChat import ID_CHATBOT
 from pyrogram import idle
 from pyrogram.types import BotCommand
 from config import OWNER_ID
-from ShrutiCHATBOT import LOGGER, ShrutiCHATBOT, userbot, load_clone_owners
-from ShrutiCHATBOT.modules import ALL_MODULES
-from ShrutiCHATBOT.modules.Clone import restart_bots
-from ShrutiCHATBOT.modules.Id_Clone import restart_idchatbots
+from AnanyaxChat import LOGGER, AnanyaxChat, userbot, load_clone_owners
+from AnanyaxChat.modules import ALL_MODULES
+from AnanyaxChat.modules.Clone import restart_bots
+from AnanyaxChat.modules.Id_Clone import restart_idchatbots
 
 from colorama import Fore, Style, init
 init(autoreset=True)
@@ -37,15 +37,15 @@ LOGGER.setLevel(logging.INFO)
 
 async def anony_boot():
     try:
-        await ShrutiCHATBOT.start()
+        await AnanyaxChat.start()
         try:
-            await ShrutiCHATBOT.send_message(
+            await AnanyaxChat.send_message(
                 int(OWNER_ID),
                 f"✨ {ShrutiCHATBOT.mention} is now <b>Alive & Running ✅</b>"
             )
-            LOGGER.info(f"🚀 @{ShrutiCHATBOT.username} Started Successfully ✅")
+            LOGGER.info(f"🚀 @{AnanyaxChat.username} Started Successfully ✅")
         except Exception:
-            LOGGER.warning(f"⚡ Please start @{ShrutiCHATBOT.username} from the owner account.")
+            LOGGER.warning(f"⚡ Please start @{AnanyaxChat.username} from the owner account.")
 
         asyncio.create_task(restart_bots())
         asyncio.create_task(restart_idchatbots())
@@ -55,7 +55,7 @@ async def anony_boot():
             try:
                 await userbot.start()
                 try:
-                    await ShrutiCHATBOT.send_message(int(OWNER_ID), "🤖 Id-Chatbot Also Started ✅")
+                    await AnanyaxChat.send_message(int(OWNER_ID), "🤖 Id-Chatbot Also Started ✅")
                     LOGGER.info("🤖 Id-Chatbot started successfully ✅")
                 except Exception:
                     LOGGER.warning("⚡ Please start Id-Chatbot from the owner account.")
@@ -66,7 +66,7 @@ async def anony_boot():
 
     # ✅ Module Loader
     for all_module in ALL_MODULES:
-        importlib.import_module("ShrutiCHATBOT.modules." + all_module)
+        importlib.import_module("AnanyaxChat.modules." + all_module)
         LOGGER.info(f"📦 Loaded Module: {Fore.CYAN}{all_module}{Style.RESET_ALL}")
 
     # ✅ Bot Commands
@@ -95,11 +95,11 @@ async def anony_boot():
     except Exception as ex:
         LOGGER.error(f"❌ Failed to set bot commands: {ex}")
 
-    LOGGER.info(f"🎉 @{ShrutiCHATBOT.username} is fully up & running! 🚀")
+    LOGGER.info(f"🎉 @{AnanyaxChat.username} is fully up & running! 🚀")
     await idle()
 
 
 # 🚀 Start Point
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(anony_boot())
-    LOGGER.info("🛑 Stopping ShrutiCHATBOT Bot...")
+    LOGGER.info("🛑 Stopping AnanyaxChat Bot...")
