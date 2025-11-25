@@ -9,12 +9,12 @@ import config
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="ShrutiBotsAss1",
+            name="AnanyaBotsAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=False,
-            plugins=dict(root="ShrutiCHATBOT.idchatbot"),
+            plugins=dict(root="AnanyaxChat.idchatbot"),
         )
         
 
@@ -27,7 +27,7 @@ class Userbot(Client):
                 await self.one.join_chat("AnanyaBots")
                 await self.one.join_chat("AnanyaBotSupport")
                 await self.one.join_chat("AnanyaAllBots")
-                await self.one.join_chat("AnanyaLogs")
+                await self.one.join_chat("AD_Creation_Chatzone")
 
             except:
                 pass
