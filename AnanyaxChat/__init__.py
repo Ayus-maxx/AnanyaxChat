@@ -2,7 +2,7 @@ import logging
 import time
 from pymongo import MongoClient
 from Abg import patch
-from ShrutiCHATBOT.userbot.userbot import Userbot
+from AnanyaxChat.userbot.userbot import Userbot
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pyrogram import Client
 from pyrogram.enums import ParseMode
@@ -82,10 +82,10 @@ async def get_idclone_owner(clone_id):
 
 # ---------------- BOT CLASS ---------------- #
 
-class ShrutiCHATBOT(Client):
+class AnanyaxChat(Client):
     def __init__(self):
         super().__init__(
-            name="ShrutiCHATBOT",
+            name="AnanyaxChat",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -104,7 +104,7 @@ class ShrutiCHATBOT(Client):
         me = await self.get_me()
         self.id = me.id
         self.name = me.first_name + " " + (me.last_name or "")
-        self.username = me.username or "Shrutichatbot"
+        self.username = me.username or "AnanyaxChat"
         self.mention = me.mention
 
     async def stop(self):
@@ -143,5 +143,5 @@ def get_readable_time(seconds: int) -> str:
 
 # ---------------- INIT OBJECTS ---------------- #
 
-ShrutiCHATBOT = ShrutiCHATBOT()
+AnanyaxChat = AnanyaxChat()
 userbot = Userbot()
