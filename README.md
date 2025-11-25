@@ -1,4 +1,4 @@
-# 🤖 Ananya ChatBot
+# 🤖 Ananya Chat Bot
 
 <div align="center">
   <img src="https://img.shields.io/github/stars/ZoxxOP/AnanyaxChat?style=for-the-badge&color=blue" alt="GitHub stars">
@@ -32,7 +32,7 @@
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/ZoxxOP/AnanyaxChat)
 
 ### Deploy on Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/NoxxOP/ChatBot)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/ZoxxOP/AnanyaxChat)
 
 ---
 
@@ -83,7 +83,7 @@ UPDATE_CHANNEL=AnanyaBots
 ```bash
 # Clone the repository
 git clone https://github.com/ZoxxOP/AnanyaxChat.git
-cd ChatBot
+cd AnanyaxChat
 
 # Install required packages
 pip install -r requirements.txt
@@ -101,7 +101,7 @@ python main.py
 ```bash
 # Clone repository
 git clone https://github.com/ZoxxOP/AnanyaxChat.git
-cd ChatBot
+cd AnanyaxChat
 
 # Build Docker image
 docker build -t chatbot .
@@ -123,7 +123,7 @@ sudo apt install python3 python3-pip git -y
 
 # Clone repository
 git clone https://github.com/ZoxxOP/AnanyaxChat.git
-cd ChatBot
+cd AnanyaxChat
 
 # Install requirements
 pip3 install -r requirements.txt
@@ -153,8 +153,8 @@ sudo yum update -y
 sudo yum install python3 python3-pip git -y
 
 # Clone and setup
-git clone https://github.com/NoxxOP/ChatBot.git
-cd ChatBot
+git clone https://github.com/ZoxxOP/AnanyaxChat.git
+cd AnanyaxChat
 pip3 install -r requirements.txt
 
 # Setup environment
@@ -205,7 +205,7 @@ python3 main.py
 
 - 💬 **Community Channel**: [@AnanyaBots](https://t.me/AnanyaBots)
 - 🆘 **Support Group**: [@AnanuaBotSupport](https://t.me/AnanyaBotSupport)
-- 📧 **Developer Contact**: [@NoxxOP](https://t.me/ZoxxOP)
+- 📧 **Developer Contact**: [@ZoxxOP](https://t.me/ZoxxOP)
 
 ---
 
@@ -222,8 +222,8 @@ python3 main.py
 ### Project Structure
 
 ```
-ChatBot/
-├── ShrutiCHATBOT/           # Main bot package
+AnanyaxChat/
+├── AnanyaxChat/           # Main bot package
 │   ├── mplugin/             # Plugin modules
 │   ├── helpers/             # Helper functions
 │   └── database/            # Database operations
@@ -240,7 +240,7 @@ ChatBot/
 ## 📊 Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=NoxxOP&repo=ChatBot&theme=dark&show_icons=true" alt="Repo Stats">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ZoxxOP&repo=ChatBot&theme=dark&show_icons=true" alt="Repo Stats">
 </div>
 
 ---
@@ -256,7 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you like this project, please ⭐ star this repository and 🍴 fork it!
 
 <div align="center">
-  <h3>Made with ❤️ by <a href="https://github.com/NoxxOP">NoxxOP</a></h3>
+  <h3>Made with ❤️ by <a href="https://github.com/ZoxxOP">ZoxxOP</a></h3>
 </div>
 
 ---
@@ -264,7 +264,7 @@ If you like this project, please ⭐ star this repository and 🍴 fork it!
 ## 📈 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NoxxOP&repo=ChatBot&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ZoxxOP&repo=AnanyaxChat&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
 </div>
 
 ## 🔥 Recent Activity
