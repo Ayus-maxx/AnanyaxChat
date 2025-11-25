@@ -1,5 +1,5 @@
 from config import OWNER_USERNAME, SUPPORT_GRP
-from ShrutiCHATBOT import ShrutiCHATBOT
+from AnanyaxChat import AnanyaxChat
 from pyrogram import Client, filters
 
 
@@ -72,14 +72,14 @@ CHATBOT_READ = f"""**
 ╚═════ ⋆★⋆ ═════╝**
 """
 
-SOURCE_READ = f"**❍ ʜᴇʏ, ᴛʜᴇ [{ShrutiCHATBOT.name}](https://t.me/{ShrutiCHATBOT.username}) ɪs ɴᴇᴡ ᴘᴏᴡᴇʀғᴜʟʟ ᴄʜᴀᴛʙᴏᴛ ᴏғ ᴡʜᴏʟᴇ ᴛᴇʟᴇɢʀᴀᴍ.**\n\n**❍ ᴘʟᴇᴀsᴇ ᴅᴏɴᴀᴛᴇ ᴛʜᴇ ᴅᴇᴠʟᴏᴘᴇʀ ᴛᴏ ᴍᴀɪɴᴛᴀɪɴ ᴛʜᴇ ᴘʀᴏɪᴇᴄᴛs**\n\n**⦿──────────────────⦿**\n\n**❍ ʜᴇʀᴇ ɪs ᴛʜᴇ ǫʀ [ᴅᴏɴᴀᴛᴇ ʜᴇʀᴇ](https://t.me/AnanyaBots/128)**\n\n**⦿──────────────────⦿**\n\n**❍ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_GRP})..\n\n<b>||❍ ʟᴏᴠᴇ ᴡɪᴛʜ ➪ [𝐌𝐫 𝐀𝐊𝐀𝐒𝐇](https://t.me/WTF_NoHope)**||</b>"
+SOURCE_READ = f"**❍ ʜᴇʏ, ᴛʜᴇ [{AnanyaxChat.name}](https://t.me/{AnanyaxChat.username}) ɪs ɴᴇᴡ ᴘᴏᴡᴇʀғᴜʟʟ ᴄʜᴀᴛʙᴏᴛ ᴏғ ᴡʜᴏʟᴇ ᴛᴇʟᴇɢʀᴀᴍ.**\n\n**❍ ᴘʟᴇᴀsᴇ ᴅᴏɴᴀᴛᴇ ᴛʜᴇ ᴅᴇᴠʟᴏᴘᴇʀ ᴛᴏ ᴍᴀɪɴᴛᴀɪɴ ᴛʜᴇ ᴘʀᴏɪᴇᴄᴛs**\n\n**⦿──────────────────⦿**\n\n**❍ ʜᴇʀᴇ ɪs ᴛʜᴇ ǫʀ [ᴅᴏɴᴀᴛᴇ ʜᴇʀᴇ](https://t.me/AnanyaBots/128)**\n\n**⦿──────────────────⦿**\n\n**❍ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_GRP})..\n\n<b>||❍ ʟᴏᴠᴇ ᴡɪᴛʜ ➪ [𝐌𝐫 𝐀𝐊𝐀𝐒𝐇](https://t.me/WTF_NoHope)**||</b>"
 
 ADMIN_READ = f"sᴏᴏɴ"
 
 ABOUT_READ = f"""
-**➻ [{ShrutiCHATBOT.name}](https://t.me/{ShrutiCHATBOT .username}) ɪs ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛ-ʙᴏᴛ.**
+**➻ [{AnanyaxChat.name}](https://t.me/{AnanyaxChat.username}) ɪs ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛ-ʙᴏᴛ.**
 
-**➻ [{ShrutiCHATBOT.name}](https://t.me/{ShrutiCHATBOT.username}) ʀᴇᴘʟɪᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴛᴏ ᴀ ᴜsᴇʀ.**
+**➻ [{AnanyaxChat.name}](https://t.me/{AnanyaxChat.username}) ʀᴇᴘʟɪᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴛᴏ ᴀ ᴜsᴇʀ.**
 
 **➻ ʜᴇʟᴘs ʏᴏᴜ ɪɴ ᴀᴄᴛɪᴠᴀᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘs.**
 
@@ -87,5 +87,5 @@ ABOUT_READ = f"""
 
 **──────────────**
 
-**➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ [{ShrutiCHATBOT.name}](https://t.me/{ShrutiCHATBOT.username})**
+**➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ [{AnanyaxChat.name}](https://t.me/{AnanyaxChat.username})**
 """
