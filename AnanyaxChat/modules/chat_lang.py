@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from ShrutiCHATBOT import ShrutiCHATBOT as app, mongo, db
-#from MukeshAPI import api
+from AnanyaxChat import AnanyaxChat as app, mongo, db
+from MukeshAPI import api
 import asyncio
-from ShrutiCHATBOT.modules.helpers import chatai, CHATBOT_ON, languages
+from AnanyaxChat.modules.helpers import chatai, CHATBOT_ON, languages
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 
 lang_db = db.ChatLangDb.LangCollection
