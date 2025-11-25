@@ -1,14 +1,14 @@
-from ShrutiCHATBOT import db as mongodb
+from AnanyaxChat import db as mongodb
 
 cloneownerdb = mongodb.cloneownerdb
 clonebotdb = mongodb.clonebotdb
 
 def get_bot_users_collection(bot_id):
-    from ShrutiCHATBOT import db as mongodb
+    from AnanyaxChat import db as mongodb
     return mongodb[f"{bot_id}_users"]
 
 def get_bot_chats_collection(bot_id):
-    from ShrutiCHATBOT import db as mongodb
+    from AnanyaxChat import db as mongodb
     return mongodb[f"{bot_id}_chats"]
 
 async def is_served_cuser(bot_id, user_id: int) -> bool:
