@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from ShrutiCHATBOT import ShrutiCHATBOT as app
+from AnanyaxChat import AnanyaxChat as app
 from config import UPDATE_CHNL as MUST_JOIN, OWNER_ID
 
 
