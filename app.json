@@ -1,9 +1,9 @@
 {
-  "name": "ShrutiCHATBOT",
-  "description": "A Telegram bot maintained under the @ShrutiBots Community 🤖",
+  "name": "AnanyaxChat",
+  "description": "A Telegram bot maintained under the @AnanyaBots Community 🤖",
   "logo": "https://files.catbox.moe/m2kbru.jpg",
   "keywords": [
-    "Chatbot",
+    "AnanyaxChat",
     "mongodb",
     "python",
     "pyrogram"
@@ -11,7 +11,7 @@
   "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/NoxxOP/ChatBot",
+  "repository": "https://github.com/ZoxxOP/AnanyaxChat",
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org (API Development Tools)",
@@ -51,12 +51,12 @@
     "SUPPORT_GRP": {
       "description": "Your Telegram Support Group username (without @)",
       "required": false,
-      "value": "ShrutiBotSupport"
+      "value": "AnanyaBotSupport"
     },
     "UPDATE_CHNL": {
       "description": "Your Telegram Updates Channel username (without @)",
       "required": false,
-      "value": "ShrutiBots"
+      "value": "AnanyaBots"
     }
   }
 }
