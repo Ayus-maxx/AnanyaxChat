@@ -12,7 +12,6 @@ deep-translator
 pycgi
 apscheduler
 Flask
-uvloop
 psutil
 langdetect
 python-dotenv
