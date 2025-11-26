@@ -16,3 +16,4 @@ psutil
 langdetect
 python-dotenv
 colorama
+MukeshAPI
