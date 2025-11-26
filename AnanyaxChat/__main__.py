@@ -16,6 +16,9 @@ from AnanyaxChat.modules.Id_Clone import restart_idchatbots
 from colorama import Fore, Style, init
 init(autoreset=True)
 
+# --- Ensure default event loop policy (fixes "no current event loop" on Python 3.11+ / Heroku) ---
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
+
 class CustomFormatter(logging.Formatter):
     FORMATS = {
         logging.DEBUG: Fore.CYAN + "🐞 [DEBUG] " + Style.RESET_ALL + "%(message)s",
@@ -35,23 +38,30 @@ handler.setFormatter(CustomFormatter())
 LOGGER.addHandler(handler)
 LOGGER.setLevel(logging.INFO)
 
+
 async def anony_boot():
     try:
+        # Start main bot client
         await AnanyaxChat.start()
         try:
+            # notify owner that bot started; using username to avoid undefined variable
             await AnanyaxChat.send_message(
                 int(OWNER_ID),
-                f"✨ {ShrutiCHATBOT.mention} is now <b>Alive & Running ✅</b>"
+                f"✨ @{AnanyaxChat.username} is now <b>Alive & Running ✅</b>"
             )
             LOGGER.info(f"🚀 @{AnanyaxChat.username} Started Successfully ✅")
         except Exception:
             LOGGER.warning(f"⚡ Please start @{AnanyaxChat.username} from the owner account.")
 
+        # Restart clones (tasks)
         asyncio.create_task(restart_bots())
         asyncio.create_task(restart_idchatbots())
+
+        # Load clone owners (await if it is async)
         await load_clone_owners()
 
-        if config.STRING1:
+        # If there's a userbot string configured, start it
+        if getattr(config, "STRING1", None):
             try:
                 await userbot.start()
                 try:
@@ -64,14 +74,21 @@ async def anony_boot():
     except Exception as ex:
         LOGGER.critical(f"🔥 Bot failed to start: {ex}")
 
-    # ✅ Module Loader
+    # ----------------
+    # Module Loader
+    # ----------------
     for all_module in ALL_MODULES:
-        importlib.import_module("AnanyaxChat.modules." + all_module)
-        LOGGER.info(f"📦 Loaded Module: {Fore.CYAN}{all_module}{Style.RESET_ALL}")
+        try:
+            importlib.import_module("AnanyaxChat.modules." + all_module)
+            LOGGER.info(f"📦 Loaded Module: {Fore.CYAN}{all_module}{Style.RESET_ALL}")
+        except Exception as e:
+            LOGGER.error(f"❌ Failed to load module {all_module}: {e}")
 
-    # ✅ Bot Commands
+    # ----------------
+    # Bot Commands
+    # ----------------
     try:
-        await ShrutiCHATBOT.set_bot_commands(
+        await AnanyaxChat.set_bot_commands(
             commands=[
                 BotCommand("start", "Start the bot"),
                 BotCommand("help", "Get the help menu"),
@@ -101,5 +118,10 @@ async def anony_boot():
 
 # 🚀 Start Point
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(anony_boot())
-    LOGGER.info("🛑 Stopping AnanyaxChat Bot...")
+    # Use asyncio.run() which creates and manages the event loop correctly
+    try:
+        asyncio.run(anony_boot())
+    except KeyboardInterrupt:
+        LOGGER.info("🛑 Stopping AnanyaxChat Bot...")
+    except Exception as e:
+        LOGGER.critical(f"🔥 Unhandled error while running bot: {e}")
